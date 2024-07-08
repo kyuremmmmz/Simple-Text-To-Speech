@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text-to-Speech</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Text-to-Speech</h1>
+    <textarea id="inputText" placeholder="Enter text to convert to speech"></textarea>
+    <br />
+    <button onclick="convertToSpeech()">Convert to Speech</button>
+    <br />
+    <audio controls id="audioPlayer" style="display: none;"></audio>
+
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
